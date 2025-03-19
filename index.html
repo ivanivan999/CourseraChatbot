@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera Chatbot</title>
+    <style>
+        /* Optional: Add some basic styling to center the chatbot */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        df-messenger {
+            --df-messenger-button-titlebar-color: #1a73e8;
+            --df-messenger-chat-background-color: #ffffff;
+            --df-messenger-font-color: #000000;
+            --df-messenger-user-message-background: #e8f0fe;
+            --df-messenger-bot-message-background: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Dialogflow Messenger Embed Code -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+        chat-icon="https://raw.githubusercontent.com/ivanivan999/CourseraChatbot/refs/heads/main/chatbot.svg"
+        intent="WELCOME"
+        chat-title="chatbot"
+        agent-id="3abda33f-737f-42d3-94fc-f4a890560fd5"
+        language-code="en"
+    ></df-messenger>
+</body>
+</html>
